@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180824 17:31:46.489" generator="Robot 3.0.4 (Python 2.7.12 on linux2)">
+<suite source="/home/himanshu/Uniclair_Auto/resource/uniclair.robot" id="s1" name="Uniclair">
+<test id="s1-t1" name="Artifact Search_2:">
+<kw name="Open uniclair to chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180824 17:31:46.733" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180824 17:31:59.147" starttime="20180824 17:31:46.733"></status>
+</kw>
+<status status="PASS" endtime="20180824 17:31:59.147" starttime="20180824 17:31:46.732"></status>
+</kw>
+<kw name="Validate artifact advance search">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180824 17:31:59.152" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180824 17:32:00.530" starttime="20180824 17:31:59.151"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:00.531" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180824 17:32:00.898" starttime="20180824 17:32:00.530"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:00.899" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180824 17:32:03.353" starttime="20180824 17:32:00.898"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:03.354" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180824 17:32:03.634" starttime="20180824 17:32:03.354"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180824 17:32:04.818" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180824 17:32:04.818" starttime="20180824 17:32:03.634"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:04.819" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180824 17:32:06.206" starttime="20180824 17:32:04.818"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180824 17:32:07.208" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180824 17:32:07.208" starttime="20180824 17:32:06.207"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Tracker}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:07.209" level="INFO">Clicking element 'xpath=//span[@title='Project Trackers']'.</msg>
+<status status="PASS" endtime="20180824 17:32:10.714" starttime="20180824 17:32:07.208"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180824 17:32:11.716" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180824 17:32:11.716" starttime="20180824 17:32:10.715"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Bugg}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:11.717" level="INFO">Clicking element 'xpath=//dl[@class='tracker_alltrackers']//dt[1]//div[2]//a[1]'.</msg>
+<status status="PASS" endtime="20180824 17:32:14.444" starttime="20180824 17:32:11.717"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180824 17:32:15.446" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180824 17:32:15.446" starttime="20180824 17:32:14.444"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Search_expertmode}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:15.447" level="INFO">Clicking element 'xpath=//button[@id='tracker-report-expert-query-button']'.</msg>
+<status status="PASS" endtime="20180824 17:32:15.738" starttime="20180824 17:32:15.447"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180824 17:32:16.739" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180824 17:32:16.740" starttime="20180824 17:32:15.739"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${Query}</arg>
+<arg>${Query_input}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:16.741" level="INFO">Typing text '(Status='New')' into text field 'xpath=//*[@class='CodeMirror-code']'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180824 17:32:17.008" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180824 17:32:17.008" starttime="20180824 17:32:16.817"></status>
+</kw>
+<msg timestamp="20180824 17:32:17.049" level="FAIL">InvalidElementStateException: Message: invalid element state: Element must be user-editable in order to clear it.
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 4.4.0-87-generic x86_64)
+</msg>
+<status status="FAIL" endtime="20180824 17:32:17.049" starttime="20180824 17:32:16.740"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:32:17.050" starttime="20180824 17:31:59.150"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180824 17:32:17.120" starttime="20180824 17:32:17.051"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:32:17.121" critical="yes" starttime="20180824 17:31:46.730">InvalidElementStateException: Message: invalid element state: Element must be user-editable in order to clear it.
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 4.4.0-87-generic x86_64)
+</status>
+</test>
+<test id="s1-t2" name="Git clone:">
+<kw name="Open uniclair to chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:17.127" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180824 17:32:29.440" starttime="20180824 17:32:17.127"></status>
+</kw>
+<status status="PASS" endtime="20180824 17:32:29.441" starttime="20180824 17:32:17.126"></status>
+</kw>
+<kw name="Validate Git clone">
+<msg timestamp="20180824 17:32:29.496" level="FAIL">No keyword with name 'Validate Git clone' found.</msg>
+<status status="FAIL" endtime="20180824 17:32:29.497" starttime="20180824 17:32:29.496"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180824 17:32:29.570" starttime="20180824 17:32:29.498"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:32:29.570" critical="yes" starttime="20180824 17:32:17.124">No keyword with name 'Validate Git clone' found.</status>
+</test>
+<test id="s1-t3" name="Sonarqube:">
+<kw name="Open uniclair to chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:29.574" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180824 17:32:41.325" starttime="20180824 17:32:29.574"></status>
+</kw>
+<status status="PASS" endtime="20180824 17:32:41.326" starttime="20180824 17:32:29.573"></status>
+</kw>
+<kw name="Validate Sonarqube home button">
+<msg timestamp="20180824 17:32:41.379" level="FAIL">No keyword with name 'Validate Sonarqube home button' found.</msg>
+<status status="FAIL" endtime="20180824 17:32:41.379" starttime="20180824 17:32:41.379"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180824 17:32:41.453" starttime="20180824 17:32:41.387"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:32:41.454" critical="yes" starttime="20180824 17:32:29.572">No keyword with name 'Validate Sonarqube home button' found.</status>
+</test>
+<test id="s1-t4" name="Mattermost:">
+<kw name="Open uniclair to chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:41.457" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180824 17:32:53.536" starttime="20180824 17:32:41.457"></status>
+</kw>
+<status status="PASS" endtime="20180824 17:32:53.536" starttime="20180824 17:32:41.456"></status>
+</kw>
+<kw name="Validate Mattermost">
+<arguments>
+<arg>Home button</arg>
+</arguments>
+<msg timestamp="20180824 17:32:53.572" level="FAIL">No keyword with name 'Validate Mattermost' found.</msg>
+<status status="FAIL" endtime="20180824 17:32:53.572" starttime="20180824 17:32:53.564"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180824 17:32:53.639" starttime="20180824 17:32:53.573"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:32:53.639" critical="yes" starttime="20180824 17:32:41.455">No keyword with name 'Validate Mattermost' found.</status>
+</test>
+<test id="s1-t5" name="Jenkins:">
+<kw name="Open uniclair to chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180824 17:32:53.648" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180824 17:33:05.520" starttime="20180824 17:32:53.647"></status>
+</kw>
+<status status="PASS" endtime="20180824 17:33:05.521" starttime="20180824 17:32:53.646"></status>
+</kw>
+<kw name="Validate jenkins Home_button">
+<msg timestamp="20180824 17:33:05.572" level="FAIL">No keyword with name 'Validate jenkins Home_button' found.</msg>
+<status status="FAIL" endtime="20180824 17:33:05.572" starttime="20180824 17:33:05.571"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180824 17:33:05.650" starttime="20180824 17:33:05.573"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:33:05.650" critical="yes" starttime="20180824 17:32:53.645">No keyword with name 'Validate jenkins Home_button' found.</status>
+</test>
+<test id="s1-t6" name="Grafana:">
+<kw name="Open uniclair to chrome">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:05.654" level="INFO">Opening browser 'Chrome' to base url 'https://demo.uniclair.com/'</msg>
+<status status="PASS" endtime="20180824 17:33:17.392" starttime="20180824 17:33:05.653"></status>
+</kw>
+<status status="PASS" endtime="20180824 17:33:17.392" starttime="20180824 17:33:05.652"></status>
+</kw>
+<kw name="Validate Grafana Home_button">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PUSER}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:17.395" level="INFO">Typing text 'bharathi' into text field 'xpath=//input[@id='form_loginname']'</msg>
+<status status="PASS" endtime="20180824 17:33:18.740" starttime="20180824 17:33:17.394"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PPASS}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:18.741" level="INFO">Typing text 'ivtree123' into text field 'xpath=//input[@id='form_pw']'</msg>
+<status status="PASS" endtime="20180824 17:33:19.025" starttime="20180824 17:33:18.740"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:19.026" level="INFO">Clicking button 'xpath=//button[@name='login']'.</msg>
+<status status="PASS" endtime="20180824 17:33:21.009" starttime="20180824 17:33:19.025"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20180824 17:33:31.011" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180824 17:33:31.011" starttime="20180824 17:33:21.009"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ProjectLocator}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:31.012" level="INFO">Clicking element 'xpath=//span[contains(text(),'Projects')]'.</msg>
+<status status="PASS" endtime="20180824 17:33:31.147" starttime="20180824 17:33:31.011"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180824 17:33:36.148" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180824 17:33:36.149" starttime="20180824 17:33:31.147"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Glp}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:36.150" level="INFO">Clicking element 'xpath=//div[@class='nav-dropdown-content-projects-lists']//div[1]//a[1]'.</msg>
+<status status="PASS" endtime="20180824 17:33:37.618" starttime="20180824 17:33:36.149"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180824 17:33:39.620" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180824 17:33:39.620" starttime="20180824 17:33:37.619"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Grafana}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:39.621" level="INFO">Clicking element 'xpath=//span[contains(text(),'Metrics Dashboard')]'.</msg>
+<status status="PASS" endtime="20180824 17:33:46.942" starttime="20180824 17:33:39.621"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Frame}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:46.945" level="INFO">Clicking element 'xpath=//a[@title='Show only this frame']'.</msg>
+<status status="PASS" endtime="20180824 17:33:52.597" starttime="20180824 17:33:46.944"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180824 17:33:57.599" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180824 17:33:57.599" starttime="20180824 17:33:52.597"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Grafana_Home}</arg>
+</arguments>
+<msg timestamp="20180824 17:33:57.600" level="INFO">Clicking element 'xpath=//div[@class='navbar-buttons navbar-buttons--actions']//button[3]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20180824 17:33:57.924" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180824 17:33:57.924" starttime="20180824 17:33:57.675"></status>
+</kw>
+<msg timestamp="20180824 17:33:57.937" level="FAIL">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 4.4.0-87-generic x86_64)
+</msg>
+<status status="FAIL" endtime="20180824 17:33:57.938" starttime="20180824 17:33:57.599"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:33:57.938" starttime="20180824 17:33:17.393"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180824 17:33:58.053" starttime="20180824 17:33:57.939"></status>
+</kw>
+<status status="FAIL" endtime="20180824 17:33:58.054" critical="yes" starttime="20180824 17:33:05.651">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 4.4.0-87-generic x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20180824 17:33:58.059" starttime="20180824 17:31:46.491"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="6" pass="0">Critical Tests</stat>
+<stat fail="6" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="6" id="s1" name="Uniclair" pass="0">Uniclair</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
