@@ -8,6 +8,9 @@ Library    Selenium2Library  timeout=10   implicit_wait=1.5   run_on_failure=Cap
 *** Variable***
 
 
+
+
+
 ${Browser}		Chrome
 ${URL}			https://demo.uniclair.com/
 ${PUSER}		xpath=//input[@id='form_loginname']
