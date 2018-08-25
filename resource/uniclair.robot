@@ -1,16 +1,11 @@
 
 
 *** Setting ***
-Library    Selenium2Library
+
 Library    Selenium2Library  timeout=10   implicit_wait=1.5   run_on_failure=Capture Page Screenshot
 
 
 *** Variable***
-
-
-
-
-
 ${Browser}		Chrome
 ${URL}			https://demo.uniclair.com/
 ${PUSER}		xpath=//input[@id='form_loginname']
