@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<TestLink>
+		<Parameters	uploadResultInTestLink = 'True'
+					testLinkTestProjectName = 'Uniclair_Automation'
+					testLinkTestPlanName = 'Uniclair_Automation-TestPlan'
+					testLinkPlatform = 'Chrome Version 58.0.3029.110 (64-bit)
+		Windows 7'
+					testLinkBuildName = ''
+					testLinkBuildNotes = ''
+					testLinkDEVKEY = '4da535015e227d08021c86fde0b6b8f8'
+					testLinkURL = "http://192.168.1.87/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
+				/>
+	</TestLink>
+</data>
+
+
+
+
