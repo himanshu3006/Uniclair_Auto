@@ -434,7 +434,7 @@ ${newfilename}		Robotest12
 
 
 
-*** comment ***
+*** Test Cases ***
 Login:
 	Open uniclair to chrome
 	Validate Login to Uniclair
@@ -446,6 +446,7 @@ Logout:
 	Logout
         [Teardown]      Close Browser
 
+*** comment ***
 Add new user:
 	Open uniclair to chrome
 	Create new user
@@ -683,7 +684,7 @@ Artifact Search_1:
         Logout
         [Teardown]      Close Browser
 
-*** Test Cases ***
+
 Artifact Search_2:
         Open uniclair to chrome
         Validate artifact advance search
@@ -870,7 +871,7 @@ Delete git fork:
         Logout
         [Teardown]      Close Browser
 
-*** Test Cases ***
+
 Git clone:
         Open uniclair to chrome
         Validate Git clone
@@ -1024,7 +1025,7 @@ Categories:
         Logout
         [Teardown]      Close Browser
 
-*** Test Cases ***
+
 Sonarqube:
         Open uniclair to chrome
         Validate Sonarqube home button
