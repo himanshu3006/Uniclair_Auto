@@ -445,13 +445,13 @@ Logout:
         Validate Logout to Uniclair
 	Logout
         [Teardown]      Close Browser
-
+*** comment ***
 Add new user:
 	Open uniclair to chrome
 	Create new user
         #Logout
 	[Teardown]      Close Browser
-*** comment ***
+
 Project Creation:
         Open uniclair to chrome
 	Validate project creation
