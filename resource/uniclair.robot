@@ -440,7 +440,7 @@ Login:
 	Validate Login to Uniclair
 	[Teardown]	Close Browser
 
-*** Test Cases ***
+*** comment ***
 Logout:
         Open uniclair to chrome
         Validate Logout to Uniclair
