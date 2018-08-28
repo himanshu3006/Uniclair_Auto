@@ -435,7 +435,15 @@ ${newfilename}		Robotest12
 
 
 *** Test Cases ***
+
+
 Login:
+
+	:FOR    ${i}    IN RANGE    999999
+	\    Exit For Loop If    ${i} == 9
+	\    Log    ${i}
+	Log    Exited
+
 	Open uniclair to chrome
 	Validate Login to Uniclair
 	[Teardown]	Close Browser
