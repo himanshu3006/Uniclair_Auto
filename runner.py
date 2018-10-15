@@ -34,7 +34,7 @@ import traceback
 import copy
 from robot.api import ExecutionResult
 import unittest
-from  testLinkLibrary import *
+#from  testLinkLibrary import *
 from robot.api import ExecutionResult, SuiteVisitor
 planID = ''
 
@@ -145,7 +145,7 @@ if __name__ == '__main__':
         complete_xml_path = os.path.join(complete_dir_path, "output.xml")
         print complete_xml_path
         result = ExecutionResult(complete_xml_path)
-        result.suite.visit(PrintTestInfo(command_args.build_id))
+        #result.suite.visit(PrintTestInfo(command_args.build_id))
 
 
 
