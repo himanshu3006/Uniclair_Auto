@@ -25,7 +25,7 @@ import pprint
 import pdb
 import json
 import urllib
-import urllib2
+import urllib3
 import telnetlib
 import types
 import commands
