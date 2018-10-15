@@ -143,7 +143,7 @@ if __name__ == '__main__':
         print ("finally")
         complete_dir_path = os.path.join(os.getcwd(), "logs" + os.sep + command_args.build_id)
         complete_xml_path = os.path.join(complete_dir_path, "output.xml")
-        print complete_xml_path
+        print (complete_xml_path)
         result = ExecutionResult(complete_xml_path)
         #result.suite.visit(PrintTestInfo(command_args.build_id))
 
