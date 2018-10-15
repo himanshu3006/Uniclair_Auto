@@ -134,7 +134,7 @@ if __name__ == '__main__':
     try:
 
         if command_args.build_id:
-            print "running"
+            print ("running")
             run_robot('True',command_args.build_id)
         else:
             run_robot()
